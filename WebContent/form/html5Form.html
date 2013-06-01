@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        
+        <script src="../js/vendor/jquery-1.9.1.min.js"></script>
+        <script src="../js/vendor/jquery.PrintArea.js"></script>
+        <script src="../js/vendor/modernizr-2.6.2.js"></script>
+        <script src="../js/wheatmark/wheatmark.js"></script>
+        <script src="../js/form/form.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id = 'header' align="center">
+	        <button id = 'submitForm'>提交表单</button><button id = 'createPrint'>生成打印</button><button id = 'printForm'>打印表单</button>
+        </div>
+        <br/>
+		<div id = 'formWindow' align="center">
+			<form action="">
+				<table>
+					<tr>
+						<td>电子邮箱：</td>
+						<td><input type="email" name="email"><br/></td>
+					</tr>
+					<tr>
+						<td>网址:</td>
+						<td>
+							<input type="url" list="url_list" name="link" />
+							<datalist id="url_list">
+							    <option label="W3School" value="http://www.w3school.com.cn" />
+							    <option label="Google" value="http://www.google.com" />
+							    <option label="Microsoft" value="http://www.microsoft.com" />
+							</datalist>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+    </body>
+</html>
